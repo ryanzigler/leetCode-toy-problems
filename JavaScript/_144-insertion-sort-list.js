@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prefer-destructuring */
+/* eslint-disable prefer-const */
 /*
 Sort a linked list using insertion sort.
 
