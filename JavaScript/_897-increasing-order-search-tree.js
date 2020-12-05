@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+/* eslint-disable no-unused-vars */
 // @ts-nocheck
 /**
  * Definition for a binary tree node.
@@ -11,8 +13,8 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var increasingBST = function (root) {
-  let nodeValues = [];
+const increasingBST = (root) => {
+  const nodeValues = [];
 
   const traverseTree = (node) => {
     if (node === null) {
@@ -24,10 +26,12 @@ var increasingBST = function (root) {
   };
   traverseTree(root);
 
-  let orderedTree = new TreeNode(0);
+  // eslint-disable-next-line no-undef
+  const orderedTree = new TreeNode(0);
   let current = orderedTree;
 
-  for (let i = 0; i < nodeValues.length; i++) {
+  for (let i = 0; i < nodeValues.length; i += 1) {
+    // eslint-disable-next-line no-undef
     current.right = new TreeNode(nodeValues[i]);
     current = current.right;
   }

@@ -15,12 +15,6 @@
         "extensions": [".js", ".jsx"]
       }
     ],
-    "no-bitwise": [
-      "error",
-      {
-        "allow": ["~~"]
-      }
-    ],
     "max-len": [
       "warn",
       {
